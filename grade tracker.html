@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Grade Tracker</h1>
+    <form id="gradeForm">
+        <label for="mathGrade">Math Grade: </label>
+        <input type="number" id="mathGrade" name="mathGrade" min="0" max="100" required>
+
+        <label for="englishGrade">English Grade: </label>
+        <input type="number" id="englishGrade" name="englishGrade" min="0" max="100" required>
+
+        <button type="button" id="submitButton">Submit</button>
+    </form>
+
+    <table id="gradesTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Math</th>
+                <th>English</th>
+                <th>Average</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be added dynamically here -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Averages</th>
+                <td id="mathAverage">0</td>
+                <td id="englishAverage">0</td>
+                <td id="overallAverage">0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
